@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://newsatlas.io"),
+  metadataBase: new URL("https://newsatlas.daedalusorg.com"),
   title: {
     default: "News Atlas - Free World News Explorer",
     template: "%s | News Atlas - Free World News Explorer",
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     title: "News Atlas - Free World News Explorer",
     description:
       "Explore the latest news from every country through an interactive world map. Get free access to curated news from around the globe.",
-    url: "https://newsatlas.io",
+    url: "https://newsatlas.daedalusorg.com",
     siteName: "News Atlas",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://newsatlas.io/og",
+        url: "https://newsatlas.daedalusorg.com/og",
         width: 1200,
         height: 630,
         alt: "News Atlas - Interactive World News Explorer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "Explore the latest news from every country through an interactive world map. Free access to curated global news.",
     creator: "@BonaVictor",
-    images: ["https://newsatlas.io/og"],
+    images: ["https://newsatlas.daedalusorg.com/og"],
   },
   robots: {
     index: true,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     // bing: "your-bing-verification",
   },
   alternates: {
-    canonical: "https://newsatlas.io",
+    canonical: "https://newsatlas.daedalusorg.com",
     languages: {
       "en-US": "/en-US",
     },
@@ -95,7 +95,11 @@ export default function RootLayout({
       className={cx("text-black bg-white dark:text-white dark:bg-black")}
     >
       <head>
-        <link rel="preload" href="https://newsatlas.io/og" as="image" />
+        <link
+          rel="preload"
+          href="https://newsatlas.daedalusorg.com/og"
+          as="image"
+        />
       </head>
       <body className="antialiased max-w-full mx-4">
         <noscript>You need to enable JavaScript to run this app.</noscript>
