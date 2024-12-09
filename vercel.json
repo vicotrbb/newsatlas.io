@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "public": false,
+  "devCommand": "npm run dev",
+  "crons": [
+    {
+      "path": "/api/news/fetch",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}
