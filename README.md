@@ -1,3 +1,11 @@
-# Hi There!
+# Atlas news
 
-This is my personal blog, feel free to use it as a template for your own just like [I did](https://vercel.com/templates/next.js/portfolio-starter-kit).
+Hello there!
+
+This is a news aggregator that allows you to explore the latest news from every country through an interactive world map.
+
+## How to run
+
+```bash
+npm run dev
+```
