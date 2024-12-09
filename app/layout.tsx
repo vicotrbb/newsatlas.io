@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://newsatlas.io/og-image.png",
+        url: "https://newsatlas.io/og",
         width: 1200,
         height: 630,
         alt: "News Atlas - Interactive World News Explorer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "Explore the latest news from every country through an interactive world map. Free access to curated global news.",
     creator: "@BonaVictor",
-    images: ["https://newsatlas.io/og-image.png"],
+    images: ["https://newsatlas.io/og"],
   },
   robots: {
     index: true,
@@ -95,11 +95,7 @@ export default function RootLayout({
       className={cx("text-black bg-white dark:text-white dark:bg-black")}
     >
       <head>
-        <link
-          rel="preload"
-          href="https://newsatlas.io/og-image.png"
-          as="image"
-        />
+        <link rel="preload" href="https://newsatlas.io/og" as="image" />
       </head>
       <body className="antialiased max-w-full mx-4">
         <noscript>You need to enable JavaScript to run this app.</noscript>
