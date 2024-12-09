@@ -6,9 +6,10 @@ This is a news aggregator that allows you to explore the latest news from every 
 
 ## How to run
 
-```bash
-npm run dev
-```
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. Copy `.env.example` to `.env` and fill in the variables
+4. Run `npm run dev` to start the development server
 
 ## Support
 

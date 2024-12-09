@@ -17,7 +17,7 @@ export function Navbar({
             href="/"
             className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1"
           >
-            <h3 className="text-xl font-bold">News Atlas</h3>
+            <h3 className="text-2xl font-bold">News Atlas</h3>
           </Link>
           <Search onSearch={onSearch} />
         </nav>

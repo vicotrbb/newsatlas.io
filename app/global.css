@@ -79,7 +79,8 @@ html {
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
+  width: 100%;
+  height: auto;
   @apply m-0;
 }
 

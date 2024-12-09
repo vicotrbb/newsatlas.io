@@ -1,9 +1,6 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://newsatlas.io"),
@@ -95,18 +92,20 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
-        GeistSans.variable,
-        GeistMono.variable
-      )}
+      className={cx("text-black bg-white dark:text-white dark:bg-black")}
     >
-      <body className="antialiased max-w-full mx-4 mt-8">
+      <head>
+        <link
+          rel="preload"
+          href="https://newsatlas.io/og-image.png"
+          as="image"
+        />
+      </head>
+      <body className="antialiased max-w-full mx-4">
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           {children}
           <Analytics />
-          <SpeedInsights />
         </main>
       </body>
     </html>
