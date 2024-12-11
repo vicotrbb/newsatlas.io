@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
 import { saveNews } from "lib/db";
-import { shuffleArray } from "app/utils/shuffle";
 
 const SERPER_API_KEY = process.env.SERPER_API_KEY!;
 const SERPER_API_URL = process.env.SERPER_API_URL!;
@@ -40,7 +39,6 @@ export async function GET() {
       name: geo.properties.name,
       code: geo.id,
     }));
-    shuffleArray(countries);
 
     for (const country of countries) {
       const newsData = await fetchNewsForCountry(country.name);
