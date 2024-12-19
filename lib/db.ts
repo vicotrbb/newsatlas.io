@@ -35,5 +35,5 @@ export const fetchNews = async (countryCode: string) => {
 };
 
 export const saveNews = async (newsItems: News[]) => {
-  await db.insert(news).values(newsItems).execute();
+  await db.insert(news).values(newsItems).onConflictDoNothing().execute();
 };
